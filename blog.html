@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Blog</title>
+	<meta name = "description" content="For this page, I will be creating a blog. It will be filled with blog posts that I have written in the past.">
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		
+		@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
+		#blog{
+			font-size:50px;
+			color:black;
+			margin-top: 0px;
+			padding-top: 100px;
+			margin-left: 100px;
+			position:relative;
+		}
+		#box{
+			position:absolute;
+			top:220px;
+			left:0px;
+			width:1000px;
+			height:200px;
+			background-color:#5341de;
+			z-index: -1;
+			margin-left: 0px;
+		}
+
+		.blogcontainer{
+			width:1000px;
+			height:400px;
+			margin-top:60px;
+			margin-bottom:0px;
+			margin-left: auto;
+			margin-right: auto;
+			overflow: hidden;
+		}
+		.blogcontainer img{
+			width:100%;
+		}
+
+		.blogcaption{
+			width:1000px;
+			height:250px;
+			margin-left: auto;
+			margin-right: auto;
+			margin-bottom:60px;
+			background-color:#FEF9E7;
+			position:relative;
+			
+		}
+		#firstpost{
+			width:1000px;
+			height:400px;
+			margin-top:200px;
+		}
+		.title{
+			font-size: 50px;
+			position:absolute;
+			top:20px;
+			left:40px;
+			font-weight:bold;
+			text-decoration: none;
+
+		}
+		.title a{
+			text-decoration: none;
+			color:black;
+		}
+		.title a:visited{
+			color:black;
+		}
+		.title a:hover{
+			color:#5341de;
+		}
+		.date{
+			font-size:20px;
+			position:absolute;
+			top:90px;
+			left:40px;
+		}
+
+		.description{
+			width:900px;
+			position:absolute;
+			top:130px;
+			left:40px;
+			font-size:23px;
+			font-family: 'Noto Serif TC', serif;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="navbar">
+		<ul>
+			<li><a href ="blog.html#footer"> CONTACT </a></li>
+			<li><a href ="blog.html"> BLOG </a></li>
+			<!-- <li><a href ="homepage.html"> PROJECTS </a></li> -->
+			<li><a href ="index.html"> HOME </a></li>
+			<li id = "logo"><a href ="index.html"> TIFFANY YU </a></li>
+		</ul>
+	</div>	
+
+	<div id="blog">
+		<h1>BLOG </h1>
+	</div>
+	<div id="box" data-rellax-speed="6">
+	</div>
+
+	<div class="blogcontainer" id="firstpost" >
+		<a href = "blogpost1.html"> <img src="images/post1.jpeg" alt="blogpost1header"> </a>
+	</div>
+	<div class="blogcaption" >
+		<div class="title">
+			<a href = "blogpost1.html"> [ Insert Title Here *in Helvetica* ] </a>
+		</div>
+		<div class="date">
+			April 14 | 6 min read 
+		</div>
+		<div class="description">
+			The New York City subway system. American Airlines. Federal income tax forms. American Apparel. This current paper you’re reading. They all have this in common — Helvetica. 
+		</div>
+	</div>
+
+	<div class="blogcontainer" >
+		<a href = "blogpost2.html"> <img src="images/post2.png" alt="blogpost2header"> </a>
+	</div>
+	<div class="blogcaption" >
+		<div class="title">
+			<a href = "blogpost2.html"> Beauty and the Beast : Media </a>
+		</div>
+		<div class="date">
+			April 14 |  3 min read 
+		</div>
+		<div class="description">
+			What is beauty? Is it defined by the sophisticated architectural designs or the wonders of nature? Or does beauty really lie in the eyes of the beholder?
+		</div>
+	</div>
+
+	<div id = "footer">
+		<div id = "footercontent">
+			LET'S STAY IN CONTACT!
+		
+			<div id = "contact">
+				EMAIL:
+				<p>yutiffan@usc.edu </p>
+				PHONE:
+				<p>(510) 990 - 7502 </p>
+			</div>
+			<div id = "icons">
+				<a href="https://www.instagram.com/tiffxyu/" target="_blank" class="fa fa-instagram"></a>
+				<a href="https://www.linkedin.com/in/yutiffan/" target="_blank" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/channel/UCRScQScooTvja-4UszwBM2w" target="_blank" class="fa fa-youtube"></a>
+				<a href= "https://github.com/yutiffan" target="_blank" class="fa fa-github"></a>
+			</div>
+		</div>
+	</div>
+
+<!--JavaScript Plugins  -->
+	<script src = "rellax-master/rellax.min.js"></script>
+
+	
+	<script>
+		var rellax = new Rellax('#box');
+	</script>
+</body>
+</html>
