@@ -1,7 +1,209 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<title>Tiffany Yu's Portfolio</title>
+	<meta name= "description" content="For my final ITP104 project, I decided to create a personal website. This website will be a platform for me to showcase my projects, resume, projects, and hobbies."> 
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+		
+		
+		#header img{
+			width:100%;
+			height:auto;
+			
+		}
+		#header{
+			width:100%;
+			height:700px;
+			position:relative;
+			background-image: url("images/header4.jpg");
+			background-size:100%;
+			background-attachment: fixed;
+			background-repeat: no-repeat;
+			margin-top: 62px;
+		}
+		#headertext{
+			
+			color:white;
+			font-family: 'Playfair Display', serif;
+			font-size:60px;
+			font-weight: bold;
+			text-align:center;
+			position:absolute;
+			top:20px;
+			left:450px;
+			
+			
+		}
+		#about{
+			font-size:40px;
+			background-color: white;
+			margin-left: 100px;
+		}
+
+		#about img{
+			position:absolute;
+			left:-90px;
+			top:150px;
+			width:600px;
+			float:left;
+		}
+		#parallaxcontainer{
+			position:relative;
+			width:450px;
+			height:600px;
+			overflow: hidden;
+			/*border: 1px solid #CCC;*/
+		}
+		#content{
+			width:800px;
+			float:left;
+			margin-right: 50px;
+			margin-bottom: 50px;
+			font-size:26px;
+			line-height: 1.4;
+		}
+
+		
+		#resume{
+			font-size:40px;
+			margin-left: 100px;
+			margin-bottom:20px;
+			position:relative;
+
+		}
+		#resume iframe{
+			width:800px;
+			height:500px;
+
+		}
+		#resume a{
+			text-decoration: none;
+			color:black;
+		}
+		.clearfloat{
+			clear:both;
+			height:500px;
+			background-image: url("images/background.jpg");
+			background-attachment: fixed;
+			opacity: 0.6;
+
+		}
+		#button{
+			float:right;
+			background-color:yellow;
+			padding:30px;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			position:absolute;
+			top:580px;
+			right:250px;
+			font-size:25px;
+		}
+		html{
+			scroll-behavior: smooth;
+		}
+	</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+	<div id="navbar">
+		<ul>
+			<li><a href ="index.html#footer"> CONTACT </a></li>
+			<li><a href ="blog.html"> BLOG </a></li>
+			<!-- <li><a href ="homepage.html"> PROJECTS </a></li> -->
+			<li><a href ="index.html#resume"> RESUME </a></li>
+			<li><a href ="index.html#about"> ABOUT </a></li>
+			<li id = "logo"><a href ="index.html"> TIFFANY YU </a></li>
+		</ul>
+	</div>	
+	<div id="header">
+		
+		<div id ="headertext" class="typing"> Hello, my name is </div>
+		
+	</div>
+
+	<div id ="about">
+		<h1>ABOUT ME </h1>
+		<div id="content">
+			<p class="typing">Hello, nice to meet you! I am...</p>
+			<p>
+				Tiffany Yu, currently a freshman majoring in <mark>Communication</mark> and double minoring in <mark>Computer Science</mark> and <mark>Marketing</mark> at the University of Southern California. 
+			</p>
+			<p>
+				I was born in <mark>Torrance, California</mark> but I grew up in <mark>Kaohsiung, Taiwan</mark>. I was brought up speaking Mandarin to my parents, English to my older sister and friends, and Taiwanese to my grandmother. 
+			</p>
+			<p>
+				Because I grew up surrounded by different languages and dialects, I’ve always been drawn to <mark>unique forms of communication</mark>. It also led me to pursue such contrasting areas of study. From learning phrases in heart-wrenching scenes of Korean dramas to mastering the syntax of pointers in C++, I enjoy communication in all forms. 
+			</p>
+			<p>
+				In my downtime, I like to (you guessed it) watch Kdramas. But beyond that, I also like to dance, go for a run, and write. I am also interested in design, such as graphic and product design. If you have any questions or comments, feel free to <mark>contact me</mark>! I’d love to have a chat. :) 
+			</p>
+		</div>
+		
+		<div id = "parallaxcontainer">
+			<img src ="images/main.JPG" alt="about me" data-rellax-speed="6"> 
+		</div>
+		
+	</div>
+	<div class ="clearfloat"> </div>
+
+
+	<div>
+
+	</div>
+	<div id="resume">
+		<h1> RESUME </h1>
+		<iframe src="TiffanyYuResume.pdf"></iframe>
+		<a href="TiffanyYuResume.pdf" download="Tiffany_Yu_Resume" target="_blank">
+			<div id="button">	
+			DOWNLOAD PDF
+			</div>
+		</a>
+	</div>
+
+	<div id = "footer">
+		<div id = "footercontent">
+			LET'S STAY IN CONTACT!
+		
+			<div id = "contact">
+				EMAIL:
+				<p>yutiffan@usc.edu </p>
+				PHONE:
+				<p>(510) 990 - 7502 </p>
+			</div>
+			<div id = "icons">
+				<a href="https://www.instagram.com/tiffxyu/" target="_blank" class="fa fa-instagram"></a>
+				<a href="https://www.linkedin.com/in/yutiffan/" target="_blank" class="fa fa-linkedin"></a>
+				<a href="https://www.youtube.com/channel/UCRScQScooTvja-4UszwBM2w" target="_blank" class="fa fa-youtube"></a>
+				<a href= "https://github.com/yutiffan" target="_blank" class="fa fa-github"></a>
+			</div>
+		</div>
+	</div>
+	
+
+	<!-- javascript plugins -->
+	<script src = "rellax-master/rellax.min.js"></script>
+
+	<script src="smoothscroll/jquery.smoothscroll.min.js"></script>
+
+	<script>
+		var rellax = new Rellax('#about img');
+		s('html').smoothScroll();	
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+	<script>
+		new TypeIt(".typing", {
+  			
+  			speed: 75,
+  			waitUntilVisible: true
+  			
+		}).go();
+	</script>
+
+	
 </body>
 </html>
